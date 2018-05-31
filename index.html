@@ -9,7 +9,11 @@
   <title>Market Place</title>
 </head>
 <body class="container-fluid">
-  <div class="row well">
+
+  <div class="row">
+    <div class="col-md-3">
+
+    </div>
     <div class="col-md-6">
 
       <h1>Please enter your shipping information</h1>
@@ -39,97 +43,33 @@
             <label for="zipCode">Zip code</label>
             <input id="zipCode" class="form-control" type="text">
           </div>
-        <!-- name -->
 
-
-
-
-
-
-
-        <!-- date -->
-        <h2>Date of Birth:</h2>
-        <div class="form-group">
-          <label for="born">Date of birth:</label>
-          <input id="born" class="form-control" type="date">
-        </div>
-        <!-- date -->
-
-        <!-- select box -->
-        <h2>Please select your favorite food:</h2>
-        <select class="form-control" id="food">
-          <option>Pizza</option>
-          <option>Burger</option>
-          <option>Taco</option>
-          <option>Sushi</option>
-        </select>
-
-        <!-- radio buttons -->
-        <h2>Please select your favorite music:</h2>
-        <div class="radio">
-          <label>
-            <input type="radio" name="music" value="Rock" checked>
-            Rock
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="music" value="Pop">
-            Pop
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="music" value="Hiphop">
-            Hip Hop
-          </label>
-        </div>
-        <!-- radio buttons -->
-
-
-
-        <!-- color -->
-        <div class="form-group">
-          <label for="color">What is your favorite color? </label>
-          <input id="color" class="form-control" type="color">
-        </div>
-        <!-- color -->
         <!-- submitt button -->
-        <button type="submit" class="btn">SUBMIT SURVEY</button>
+        <button type="submit" class="btn">SUBMIT</button>
       </form>
       <!-- submitt button -->
 
-      <div id="submittedSurvey">
-<h2>Order Comfirmation</h2>
+      <div id="submittedInfo">
+        <div class="row well">
+
+        <h2>Order Comfirmation</h2>
         <p>
         Hello <strong><span class="firstName"></span> <span class="lastName"></span></strong>!
         </br>
 
-        Thank you for shopping with us.
+        Thank you for shopping with us.</br>
         Your confirmation# is #######
 
         <h3>Ship To:</h3>
         <p>
-        <span class="firstName"> </span><span class="firstName"></span></br>
-        </br>
+        <span class="firstName"> </span><span class="firstName"></span></br></br>
         <span class="streetAddress"></span></br>
         <span class="city"></span> ,<span class="state"></span> <span class="zipCode"></span></br>
       </p>
+    </div>
 
-
-
-        Date of Birth: <span class="born"></span>
-      </br>
-      My Favorite Food: <span class="food"></span>
-    </br>
-    My Favorite Music: <span class="music"></span>
-  </br>
-  <strong class="color">This Color is My Favorite Color: <span class="colorHex"></span></strong>
-</p>
+    </div>
+  </div>
 </div>
-</div>
-
-</div>
-
 </body>
 </html>

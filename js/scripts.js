@@ -10,12 +10,7 @@ $(document).ready(function() {
 
 
 
-
-    var food = $("#food").val();
-    var music = $("input:radio[name=music]:checked").val();
-    var dob = $("#born").val();
-    var myFavColor = $("#color").val();
-    console.log(color);
+    console.log(submittedInfo);
 
     $(".firstName").text(firstName);
     $(".lastName").text(lastName);
@@ -24,15 +19,7 @@ $(document).ready(function() {
     $(".state").text(state);
     $(".zipCode").text(zipCode);
 
-
-
-    $(".born").text(dob);
-    $(".music").text(music);
-    $(".food").text(food);
-    $(".color").css("color", myFavColor);
-    $(".colorHex").text(myFavColor);
-
-    $("#submittedSurvey").show();
+    $("#submittedInfo").show();
 
   });
 });
