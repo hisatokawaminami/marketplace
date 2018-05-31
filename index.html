@@ -1,52 +1,135 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-1.12.0.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>A fantastical adventure</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Fill in the blanks to write your story!</h1>
-      <div>
-        <form id="formOne">
-          <div class="form-group">
-            <label for="person1">A name</label>
-            <input id="person1" class="form-control" type="text">
-          </div>
-          <div class="form-group">
-            <label for="person2">Another name</label>
-            <input id="person2" class="form-control" type="text">
-          </div>
-          <div class="form-group">
-            <label for="animal">An animal</label>
-            <input id="animal" class="form-control" type="text">
-          </div>
-          <div class="form-group">
-            <label for="exclamation">An exclamation</label>
-            <input id="exclamation" class="form-control" type="text">
-          </div>
-          <div class="form-group">
-            <label for="verb">A past tense verb</label>
-            <input id="verb" class="form-control" type="text">
-          </div>
-          <div class="form-group">
-            <label for="noun">A noun</label>
-            <input id="noun" class="form-control" type="text">
-          </div>
+<head>
+  <meta charset="utf-8">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Market Place</title>
+</head>
+<body class="container-fluid">
+  <div class="row well">
+    <div class="col-md-6">
 
-          <button type="submit" class="btn">Show me the story!</button>
-        </form>
-      </div>
+      <h1>Please enter your shipping information</h1>
+      <form id="formOne">
+        <!-- name -->
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input id="firstName" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input id="lastName" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="streetAddress">Street Address</label>
+          <input id="streetAddress" class="form-control" type="text">
+        </div>
+         <div class="form-group">
+            <label for="city">City</label>
+            <input id="city" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="state">State</label>
+            <input id="state" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="zipCode">Zip code</label>
+            <input id="zipCode" class="form-control" type="text">
+          </div>
+        <!-- name -->
 
-      <div id="story">
-        <h1>A fantastical adventure</h1>
+
+
+
+
+
+
+        <!-- date -->
+        <h2>Date of Birth:</h2>
+        <div class="form-group">
+          <label for="born">Date of birth:</label>
+          <input id="born" class="form-control" type="date">
+        </div>
+        <!-- date -->
+
+        <!-- select box -->
+        <h2>Please select your favorite food:</h2>
+        <select class="form-control" id="food">
+          <option>Pizza</option>
+          <option>Burger</option>
+          <option>Taco</option>
+          <option>Sushi</option>
+        </select>
+
+        <!-- radio buttons -->
+        <h2>Please select your favorite music:</h2>
+        <div class="radio">
+          <label>
+            <input type="radio" name="music" value="Rock" checked>
+            Rock
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="music" value="Pop">
+            Pop
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="music" value="Hiphop">
+            Hip Hop
+          </label>
+        </div>
+        <!-- radio buttons -->
+
+
+
+        <!-- color -->
+        <div class="form-group">
+          <label for="color">What is your favorite color? </label>
+          <input id="color" class="form-control" type="color">
+        </div>
+        <!-- color -->
+        <!-- submitt button -->
+        <button type="submit" class="btn">SUBMIT SURVEY</button>
+      </form>
+      <!-- submitt button -->
+
+      <div id="submittedSurvey">
+<h2>Order Comfirmation</h2>
         <p>
-One day, <span class="person1"></span> and <span class="person2"></span> were walking through the woods, when suddenly a giant <span class="animal"></span> appeared. "<span class="exclamation"></span>", <span class="person1"></span> cried. The two of them <span class="verb"></span> as quickly possible, and when they were safe, <span class="person1"></span> and <span class="person2"></span> gave each other a giant <span class="noun"></span>.
+        Hello <strong><span class="firstName"></span> <span class="lastName"></span></strong>!
+        </br>
+
+        Thank you for shopping with us.
+        Your confirmation# is #######
+
+        <h3>Ship To:</h3>
+        <p>
+        <span class="firstName"> </span><span class="firstName"></span></br>
+        </br>
+        <span class="streetAddress"></span></br>
+        <span class="city"></span> ,<span class="state"></span> <span class="zipCode"></span></br>
+      </p>
+
+
+
+        Date of Birth: <span class="born"></span>
+      </br>
+      My Favorite Food: <span class="food"></span>
+    </br>
+    My Favorite Music: <span class="music"></span>
+  </br>
+  <strong class="color">This Color is My Favorite Color: <span class="colorHex"></span></strong>
 </p>
-      </div>
-    </div>
-  </body>
+</div>
+</div>
+
+</div>
+
+</body>
 </html>

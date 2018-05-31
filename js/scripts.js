@@ -1,21 +1,38 @@
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
-    var person1Input = $("input#person1").val();
-    var person2Input = $("input#person2").val();
-    var animalInput= $("input#animal").val();
-    var exclamationInput = $("input#exclamation").val();
-    var verbInput = $("input#verb").val();
-    var nounInput = $("input#noun").val();
-
-    $(".person1").text(person1Input);
-    $(".person2").text(person2Input);
-    $(".animal").text(animalInput);
-    $(".exclamation").text(exclamationInput);
-    $(".verb").text(verbInput);
-    $(".noun").text(nounInput);
-
-    $("#story").show();
-
     event.preventDefault();
+    var firstName = $("input#firstName").val();
+    var lastName = $("input#lastName").val();
+    var streetAddress = $("input#streetAddress").val();
+    var city = $("input#city").val();
+    var state = $("input#state").val();
+    var zipCode = $("input#zipCode").val();
+
+
+
+
+    var food = $("#food").val();
+    var music = $("input:radio[name=music]:checked").val();
+    var dob = $("#born").val();
+    var myFavColor = $("#color").val();
+    console.log(color);
+
+    $(".firstName").text(firstName);
+    $(".lastName").text(lastName);
+    $(".streetAddress").text(streetAddress);
+    $(".city").text(city);
+    $(".state").text(state);
+    $(".zipCode").text(zipCode);
+
+
+
+    $(".born").text(dob);
+    $(".music").text(music);
+    $(".food").text(food);
+    $(".color").css("color", myFavColor);
+    $(".colorHex").text(myFavColor);
+
+    $("#submittedSurvey").show();
+
   });
 });
